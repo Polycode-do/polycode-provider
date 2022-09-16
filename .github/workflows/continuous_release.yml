@@ -3,7 +3,8 @@ name: continuous_release
 on:
   push:
     branches: ["**"]
-    tags: ["v**"]
+    tags:
+      - "v**"
 
 env:
   GITHUB_TOKEN: ${{ secrets.BOT_ACCESS_TOKEN }}
